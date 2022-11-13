@@ -1,0 +1,288 @@
+
+            /* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    font-size: 15px;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+body {
+    box-sizing: border-box;
+}
+
+a:visited,
+a:link {
+    text-decoration: none;
+    color: white;
+}
+
+
+            /* Header Styles */
+
+header {
+    display: flex;
+    width: 100%;
+    height: 10vh;
+    align-items: center;
+    justify-content: space-between;
+    background-color: black;
+    color: white;
+}
+
+header nav {
+    margin: 10px;
+}
+
+header a {
+    font-size: 1rem;
+    margin: 10px;
+}
+
+header h1 {
+    margin: 10px;
+    font-weight: 600;
+    font-size: 3rem;
+    margin-left: 20px;
+}
+
+@media only screen and (max-width: 600px) {
+    header h1 {
+        font-size: 2rem;
+    }
+
+    header .heading-aboutme {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 415px) {
+    header .heading-project {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 340px) {
+    header .heading-skills,
+    header .heading-contacts {
+        display: none;
+    }
+}
+
+                /* About section styles */
+
+.about {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.about img {
+    width: 30%;
+    margin: 20px;
+    border-radius: 30px;
+    flex-shrink: 1;
+    flex-basis: 40%;
+}
+
+.about h2 {
+    font-size: 2.5rem;
+    margin: 20px;
+    margin-bottom: 40px;
+    text-align: center;
+
+}
+
+.about .paragraf-box {
+    margin-bottom: 50px;
+    flex-shrink: 5;
+    flex-basis: 60%;
+}
+
+.about p {
+    font-size: 1.2rem;
+    line-height: 30px;
+    margin-bottom: 20px;
+}
+
+.about .text-box {
+    margin: 30px;
+}
+
+@media screen and (max-width: 800px) {
+    .about {
+        flex-wrap: wrap;
+    }
+
+    .about img {
+        width: 80%;
+    }
+
+    .about p {
+        font-size: 1.8rem;
+    }
+}
+
+                /* Project section styles */
+
+.projects {
+    color: white;
+    background-color: black;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.projects h2 {
+    justify-self: start;
+    font-size: 3rem;
+}
+
+.projects div {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 90%;
+}
+
+.project-holder {
+    margin-bottom: 100px;
+}
+
+.projects .project-box {
+    height: 250px;
+    width: 25%;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+    border: 1px solid white;
+}
+
+.project-box p {
+    font-size: 1.2rem;
+}
+
+.tech i{
+    width: 35px;
+    height: 35px;
+}
+
+.projects a {
+    transition: all 0.3s;
+}
+
+.projects a:hover {
+    transform: translate(10px, -10px);
+    box-shadow: rgba(255, 255, 255, 1) -10px 10px 0;
+}
+
+.projects a:active {
+    transform: translate(5px, -5px);
+    box-shadow: rgba(255, 255, 255, 1) -5px 5px 0px;
+}
+
+@media only screen and (max-width: 780px) {
+
+    .projects {
+        height: fit-content;
+    }
+
+
+    .projects .project-box {
+        width: 60%;
+        height: 400px;
+        margin: 50px;
+    }
+
+    .project-holder {
+        flex-wrap: wrap;
+    }
+    
+}
+
+                    /* Skills section styling */
+
+.skills {
+    height: 30vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.skills h2 {
+    font-size: 3rem;
+    margin: 40px;
+}
+
+.skills .skill-box {
+    width: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    margin: 20px;
+}
+
+
+.skills .programming {
+    width: 80px;
+    height: 80px;
+}
+
+@media only screen and (max-width: 700px) {
+    .skills {
+        height: 70vh;
+    }
+
+    .skills .skill-box {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        flex-direction: row;
+        flex-wrap: wrap;
+        height: 100%;
+        width: 100%;
+    }
+
+    .skills .programming {
+        width: 80px;
+        height: 80px;
+        margin: 20px;
+    }
+
+}
+
+                    /*Contast section styles  */
+
+.contacts {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.contacts img {
+    width: 60px;
+    height: 60px;
+    margin: 10px;
+}
+
+.contacts h2 {
+    margin: 10px;
+}
+
+.contacts p {
+    margin: 10px;
+}
