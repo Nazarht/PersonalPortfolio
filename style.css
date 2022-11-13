@@ -344,6 +344,7 @@ header h1 {
 
 #open {
     cursor: pointer;
+    color: rgb(24, 17, 80);
 }
 
 @keyframes appear {
