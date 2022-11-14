@@ -11,6 +11,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600&display=swap" rel="stylesheet">
     <script src="./theme.js" defer></script>
     <script src="./window.js" defer></script>
+    <script src="./photoroll.js" defer></script>
     <title>My Personal Website</title>
 </head>
 <body>
@@ -24,14 +25,35 @@
         </nav>
     </header>
     <main>
+
+                   <!--Modal Window  -->
         <div id="modal-background">
             <div id="modal-window" class="modal">
                 <div id="modal-content">
-                    <div id="test-div"></div>
+                    <div id="view-port">
+                        <div id="img-container">
+                            <img src="./content/photos/2.JPG">
+                            <img src="./content/photos/3.JPG">
+                            <img src="./content/photos/4.JPG">
+                            <img src="./content/photos/6.JPG">
+                            <img src="./content/photos/7.JPG">
+                            <img src="./content/photos/8.JPG">
+                            <img src="./content/photos/9.JPG">
+                            <img src="./content/photos/10.JPG">
+                            <img src="./content/photos/11.JPG">
+                            <img src="./content/photos/12.JPG">
+                        </div>
+                    </div>
                 </div>
-                <div id="close-button">Close</div>
+                <div class="button-holder">
+                    <div class="window-button previous-button">Previous</div>
+                    <div class="window-button close-button">Close</div>
+                    <div class="window-button next-button">Next</div>
+                </div>
             </div>
         </div>
+
+                    <!--Modal Window  -->
         <section class="about" id="aboutlink">
             <img src="./content/IMG_3023.JPG" class="personal-photo">
             <div class="text-box">

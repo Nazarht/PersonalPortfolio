@@ -305,6 +305,8 @@ header h1 {
     width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.7);
+    justify-content: center;
+    align-items: center;
 }
 
 #modal-window {
@@ -312,34 +314,35 @@ header h1 {
     background-color: #fefefe;
     margin: 5% auto;
     padding: 20px;
-    width: 80%;
-    height: 80%;
+    width: 90vw;
+    height: 85vh;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
     transition: all 2s;
     animation: appear 1s ease;
 }
 
-#test-div {
-    width: 500px;
-    height: 300px;
-    background-color: green;
-}
-
-#close-button {
+.window-button {
     background-color: black;
     color: white;
     padding: 10px 15px;
     margin: 10px;
     font-size: 1.2rem;
     border-radius: 15px;
-    width: fit-content;
+    width: 7rem;
+    text-align: center;
 }
 
-#close-button:hover {
+.window-button:hover {
     cursor: pointer;
+}
+
+.button-holder {
+    display: flex;
+    align-items: center;
+    justify-items: center;
 }
 
 #open {
@@ -356,5 +359,87 @@ header h1 {
     100% {
         transform: scale(1,1);
         opacity: 1;
+    }
+}
+
+                /*Photo roll  */
+
+#img-container {
+    display: flex;
+    flex-direction: row;
+    width: 753.91px;
+    height: 500px;
+}
+
+#img-container img {
+    width: 753.91px;
+    height: 500px;
+}
+
+#view-port {
+    width: 753.91px;
+    height: 500px;
+    overflow: hidden;
+}
+
+@media only screen and (max-width: 900px) {
+    #img-container {
+        width: 527.734px;
+        height: 350px;
+    }
+
+    #img-container img {
+        width: 527.734px;
+        height: 350px;
+    }
+
+    #view-port {
+        width: 527.734px;
+        height: 350px;
+    }
+}
+
+@media only screen and (max-width: 620px) {
+    #img-container {
+        width: 301.56px;
+        height: 200px;
+    }
+
+    #img-container img {
+        width: 301.56px;
+        height: 200px;
+    }
+
+    #view-port {
+        width: 301.56px;
+        height: 200px;
+    }
+
+    #modal-window {
+        height: 50vh;
+    } 
+
+    .window-button {
+        font-size: 1rem;
+        padding: 7px 10px;
+        margin: 5px;
+        width: 5rem;
+    }
+}
+
+@media only screen and (max-width: 350px) {
+    #img-container {
+        width: 258px;
+        height: 180px;
+    }
+
+    #img-container img {
+        width: 258px;
+        height: 180px;
+    }
+
+    #view-port {
+        width: 258px;
+        height: 180px;
     }
 }
